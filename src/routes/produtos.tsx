@@ -19,6 +19,9 @@ function ProdutosPage() {
   const [showForm, setShowForm] = useState(false)
   const [name, setName] = useState('')
   const [description, setDescription] = useState('')
+  const [imageUrl, setImageUrl] = useState('')
+  const [icon, setIcon] = useState('')
+  const [sortOrder, setSortOrder] = useState('0')
   const [saving, setSaving] = useState(false)
   const [message, setMessage] = useState<string | null>(null)
 
@@ -32,6 +35,9 @@ function ProdutosPage() {
       name: name.trim(),
       slug: slugify(name),
       description: description.trim() || null,
+      image_url: imageUrl.trim() || null,
+      icon: icon.trim() || null,
+      sort_order: Number.isFinite(Number(sortOrder)) ? Number(sortOrder) : 0,
       status: 'rascunho',
     })
 
@@ -45,6 +51,9 @@ function ProdutosPage() {
     setMessage('Categoria cadastrada com sucesso.')
     setName('')
     setDescription('')
+    setImageUrl('')
+    setIcon('')
+    setSortOrder('0')
     setShowForm(false)
   }
 
@@ -96,6 +105,43 @@ function ProdutosPage() {
               onChange={(e) => setDescription(e.target.value)}
               className="min-h-[80px] rounded-md border border-border px-3 py-2"
               placeholder="Descrição opcional"
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label htmlFor="image_url" className="text-sm font-medium">
+              URL da imagem
+            </label>
+            <input
+              id="image_url"
+              value={imageUrl}
+              onChange={(e) => setImageUrl(e.target.value)}
+              className="rounded-md border border-border px-3 py-2"
+              placeholder="https://..."
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label htmlFor="icon" className="text-sm font-medium">
+              Ícone
+            </label>
+            <input
+              id="icon"
+              value={icon}
+              onChange={(e) => setIcon(e.target.value)}
+              className="rounded-md border border-border px-3 py-2"
+              placeholder="Ex: nome do ícone"
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label htmlFor="sort_order" className="text-sm font-medium">
+              Ordem
+            </label>
+            <input
+              id="sort_order"
+              type="number"
+              value={sortOrder}
+              onChange={(e) => setSortOrder(e.target.value)}
+              className="rounded-md border border-border px-3 py-2"
+              placeholder="0"
             />
           </div>
           <button
