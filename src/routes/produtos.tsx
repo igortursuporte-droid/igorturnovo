@@ -61,13 +61,21 @@ function ProdutosPage() {
     <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-foreground">Produtos</h1>
-        <button
-          type="button"
-          onClick={() => setShowForm((v) => !v)}
-          className="rounded-md bg-primary px-4 py-2 text-primary-foreground"
-        >
-          {showForm ? 'Cancelar' : 'Cadastrar categoria'}
-        </button>
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            className="rounded-md bg-primary px-4 py-2 text-primary-foreground"
+          >
+            Cadastrar produto
+          </button>
+          <button
+            type="button"
+            onClick={() => setShowForm((v) => !v)}
+            className="rounded-md bg-primary px-4 py-2 text-primary-foreground"
+          >
+            {showForm ? 'Cancelar' : 'Cadastrar categoria'}
+          </button>
+        </div>
       </div>
 
       {message && (
