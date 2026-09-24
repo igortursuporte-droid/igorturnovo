@@ -1,0 +1,172 @@
+{
+  "communities": {
+    "0": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowimportingtsextensions",
+      "tsconfig_compileroptions_baseurl",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_compileroptions_nounusedlocals",
+      "tsconfig_compileroptions_nounusedparameters",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_compileroptions_usedefineforclassfields",
+      "tsconfig_include"
+    ],
+    "1": [
+      "package",
+      "package_name",
+      "package_private",
+      "package_type",
+      "package_version",
+      "ref_autoprefixer",
+      "ref_node_path",
+      "ref_postcss",
+      "ref_tailwindcss",
+      "ref_tanstack_router_plugin",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript",
+      "ref_vite",
+      "ref_vitejs_plugin_react",
+      "tailwind_config",
+      "vite_config"
+    ],
+    "2": [
+      "ref_react",
+      "ref_supabase_supabase_js",
+      "src_lib_supabase",
+      "src_lib_supabase_supabase",
+      "src_lib_supabase_supabaseanonkey",
+      "src_lib_supabase_supabaseurl",
+      "src_routes_produtos",
+      "src_routes_produtos_produtospage",
+      "src_routes_produtos_produtospage_handlesubmit",
+      "src_routes_produtos_route",
+      "src_routes_produtos_slugify"
+    ],
+    "3": [
+      "package_devdependencies",
+      "package_devdependencies_autoprefixer",
+      "package_devdependencies_postcss",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tanstack_router_plugin",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react"
+    ],
+    "4": [
+      "ref_react_dom",
+      "ref_routetree_gen",
+      "src_main",
+      "src_main_register",
+      "src_main_router",
+      "src_main_tanstack_react_router",
+      "src_styles"
+    ],
+    "5": [
+      "ref_tanstack_react_router",
+      "src_routes_index",
+      "src_routes_index_homepage",
+      "src_routes_index_route",
+      "src_routes_root",
+      "src_routes_root_rootcomponent",
+      "src_routes_root_route"
+    ],
+    "6": [
+      "package_dependencies",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_supabase_supabase_js",
+      "package_dependencies_tanstack_react_router"
+    ],
+    "7": [
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_preview"
+    ],
+    "8": [
+      "postcss_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1,
+    "1": 0.1323529411764706,
+    "2": 0.21818181818181817,
+    "3": 0.2,
+    "4": 0.2857142857142857,
+    "5": 0.2857142857142857,
+    "6": 0.4,
+    "7": 0.5,
+    "8": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 18
+    },
+    {
+      "id": "ref_tanstack_react_router",
+      "label": "@tanstack/react-router",
+      "degree": 5
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 4
+    },
+    {
+      "id": "ref_react",
+      "label": "react",
+      "degree": 3
+    },
+    {
+      "id": "ref_supabase_supabase_js",
+      "label": "@supabase/supabase-js",
+      "degree": 2
+    },
+    {
+      "id": "ref_react_dom",
+      "label": "react-dom",
+      "degree": 2
+    },
+    {
+      "id": "ref_tanstack_router_plugin",
+      "label": "@tanstack/router-plugin",
+      "degree": 2
+    },
+    {
+      "id": "ref_vitejs_plugin_react",
+      "label": "@vitejs/plugin-react",
+      "degree": 2
+    },
+    {
+      "id": "ref_tailwindcss",
+      "label": "tailwindcss",
+      "degree": 2
+    },
+    {
+      "id": "ref_vite",
+      "label": "vite",
+      "degree": 2
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}
